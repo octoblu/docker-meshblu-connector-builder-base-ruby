@@ -29,3 +29,4 @@ RUN set -ex \
 	&& rm -rf /var/lib/apt/lists/*
 
 RUN [ "cross-build-end" ]
+ENTRYPOINT [ "/usr/bin/qemu-arm-static", "/usr/bin/env", "QEMU_EXECVE=1" ]
