@@ -1,4 +1,4 @@
-FROM resin/armv7hf-debian-qemu
+FROM octoblu/armv7hf-debian-qemu
 
 RUN [ "cross-build-start" ]
 
